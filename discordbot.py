@@ -500,9 +500,9 @@ async def on_message(message):
         # チャンネルへメッセージを送信
         await message.channel.send(f"Dear💛 {message.author.mention} No. Thank YOU! ")  # f文字列（フォーマット済み文字列リテラル）
         
-     if message.content == "Thank you":
+    if message.content == "Thankyou":
         # チャンネルへメッセージを送信
-        await message.channel.send(f"Dear💛 {message.author.mention} No. **Thank YOU!** ")  # f文字列（フォーマット済み文字列リテラル）
+        await message.channel.send(f"Dear💛 {message.author.mention} No. Thank YOU! ")  # f文字列（フォーマット済み文字列リテラル）
         
 # Botの起動とDiscordサーバーへの接続
 client.run(token)
