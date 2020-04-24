@@ -500,9 +500,49 @@ async def on_message(message):
         # チャンネルへメッセージを送信
         await message.channel.send(f"Dear💛 {message.author.mention} No. Thank YOU! ")  # f文字列（フォーマット済み文字列リテラル）
         
-    if message.content == "Thankyou":
+    if message.content == "Thank you":
         # チャンネルへメッセージを送信
-        await message.channel.send(f"Dear💛 {message.author.mention} No. Thank YOU! ")  # f文字列（フォーマット済み文字列リテラル）
+        await message.channel.send(f"Dear💚 {message.author.mention} No. Thank YOU! ")  # f文字列（フォーマット済み文字列リテラル）
+    
+    if message.content == "Thanks":
+        # チャンネルへメッセージを送信
+        await message.channel.send(f"Dear💙 {message.author.mention} No. Thank YOU! ")  # f文字列（フォーマット済み文字列リテラル）
+    
+    if message.content == "thankyou":
+        # チャンネルへメッセージを送信
+        await message.channel.send(f"Dear♥ {message.author.mention} No. Thank YOU! ")  # f文字列（フォーマット済み文字列リテラル）
+    
+    if message.content == "thank you":
+        # チャンネルへメッセージを送信
+        await message.channel.send(f"Dear♥ {message.author.mention} No. Thank YOU! ")  # f文字列（フォーマット済み文字列リテラル）
+            
+    if message.content == "Thank you!":
+        # チャンネルへメッセージを送信
+        await message.channel.send(f"Dear💗 {message.author.mention} No. Thank YOU! ")  # f文字列（フォーマット済み文字列リテラル）
+    
+    if message.content == "Thanks!":
+        # チャンネルへメッセージを送信
+        await message.channel.send(f"Dear💕 {message.author.mention} No. Thank YOU! ")  # f文字列（フォーマット済み文字列リテラル）
+        
+    if message.content == "ty":
+        # チャンネルへメッセージを送信
+        await message.channel.send(f"😃 Dear {message.author.mention} Thx! ")  # f文字列（フォーマット済み文字列リテラル）
+    
+    if message.content == "thx":
+        # チャンネルへメッセージを送信
+        await message.channel.send(f"😃 Dear {message.author.mention} Thx! ")  # f文字列（フォーマット済み文字列リテラル）
+    
+    if message.content == "ありがとうございます":
+        # チャンネルへメッセージを送信
+        await message.channel.send(f"<:good01:699581068285706301> {message.author.mention}さん💚 No. Thank YOU! ")  # f文字列（フォーマット済み文字列リテラル）
+  　
+    if message.content == "ありがとうございました":
+        # チャンネルへメッセージを送信
+        await message.channel.send(f"<:good01:699581068285706301> {message.author.mention}さん💗 No. Thank YOU! ")  # f文字列（フォーマット済み文字列リテラル）
+            
+    if message.content == "<:ty:699857337980026930><:hai_kao:699072592987947117>":
+        # チャンネルへメッセージを送信
+        await message.channel.send(f"<:ty:699857337980026930><:hai_kao:699072592987947117>")  # f文字列（フォーマット済み文字列リテラル）
         
 # Botの起動とDiscordサーバーへの接続
 client.run(token)
