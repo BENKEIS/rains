@@ -6,7 +6,7 @@ import discord
 from datetime import datetime 
 
 token = os.environ['DISCORD_BOT_TOKEN']
-CHANNEL_ID =702452686305493074  #チャンネルID
+CHANNEL_ID =703338003774570596  #チャンネルID
 
 # 接続に必要なオブジェクトを生成
 client = discord.Client()
@@ -465,10 +465,28 @@ async def loop():
     
     if now == '23:58':
         channel = client.get_channel(CHANNEL_ID)
-        await channel.send('/rain JPYN 20 ActiveUserOnly  <:good01:699581068285706301>🌈<:JPYNdisco:698471276498649168>HelloAll⭐')
-  
+        await channel.send('/rain JPYN 20 ActiveUserOnly  <:good01:699581068285706301>🌈<:JPYNdisco:698471276498649168>HelloAll⭐') 
 
 #ループ処理実行
 loop.start()
+
+@client.event
+async def on_message(message):
+    """メッセージを処理"""
+    if message.author.bot:  # ボットのメッセージをハネる
+        return
+
+    if message.content == "<:hello:699779689127870514>":
+        # チャンネルへメッセージを送信
+        await message.channel.send(f"<:hello:699779689127870514>")  # f文字列（フォーマット済み文字列リテラル）
+        
+    if message.content == "<:hai_kao:699072592987947117>":
+        # チャンネルへメッセージを送信
+        await message.channel.send(f"<:hai_kao:699072592987947117>")  # f文字列（フォーマット済み文字列リテラル）
+
+    if message.content == "Thankyou":
+        # チャンネルへメッセージを送信
+        await message.channel.send(f"Dear{message.author.mention} <:tok:700489006009286786> ")  # f文字列（フォーマット済み文字列リテラル）
+        
 # Botの起動とDiscordサーバーへの接続
 client.run(token)
