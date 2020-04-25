@@ -144,11 +144,7 @@ async def on_message(message):
     if message.content == "<:hai_kao:699072592987947117> <:hai_kao:699072592987947117> <:hai_kao:699072592987947117>":
         # チャンネルへメッセージを送信
         await message.channel.send(f"<:hai_kao:699072592987947117> <:hai_kao:699072592987947117> <:hai_kao:699072592987947117>")  # f文字列（フォーマット済み文字列リテラル）
-        
-    if message.content == "<:hai_kao:699072592987947117> <:hai_kao:699072592987947117>":
-        # チャンネルへメッセージを送信
-        await message.channel.send(f"<:hai_kao:699072592987947117> <:hai_kao:699072592987947117>")  # f文字列（フォーマット済み文字列リテラル）
-        
+    
     if message.content == "<:ty:699857337980026930><:hai_kao:699072592987947117>":
         # チャンネルへメッセージを送信
         await message.channel.send(f"<:ty:699857337980026930><:hai_kao:699072592987947117>")  # f文字列（フォーマット済み文字列リテラル）
