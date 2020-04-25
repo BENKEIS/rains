@@ -140,13 +140,6 @@ async def on_message(message):
     if message.author.bot:  # ボットのメッセージをハネる
         return
 
-    if message.content == "<:hello:699779689127870514>":
-        # チャンネルへメッセージを送信
-        await message.channel.send(f"<:hello:699779689127870514>")  # f文字列（フォーマット済み文字列リテラル）
-        
-    if message.content == "<:gn:699792795363311676>":
-        # チャンネルへメッセージを送信
-        await message.channel.send(f"<:gn:699792795363311676>")  # f文字列（フォーマット済み文字列リテラル）
         
     if message.content == "<:hai_kao:699072592987947117> <:hai_kao:699072592987947117> <:hai_kao:699072592987947117>":
         # チャンネルへメッセージを送信
@@ -155,59 +148,10 @@ async def on_message(message):
     if message.content == "<:hai_kao:699072592987947117> <:hai_kao:699072592987947117>":
         # チャンネルへメッセージを送信
         await message.channel.send(f"<:hai_kao:699072592987947117> <:hai_kao:699072592987947117>")  # f文字列（フォーマット済み文字列リテラル）
-
-    if message.content == "🥳":
-        # チャンネルへメッセージを送信
-        await message.channel.send(f"<:heart02:699580174911668225>")  # f文字列（フォーマット済み文字列リテラル）
-        
-    if message.content == "Thankyou":
-        # チャンネルへメッセージを送信
-        await message.channel.send(f"Dear💛{message.author.mention} 💛No. Thank YOU! ")  # f文字列（フォーマット済み文字列リテラル）
-        
-    if message.content == "Thank you":
-        # チャンネルへメッセージを送信
-        await message.channel.send(f"Dear💚 {message.author.mention} 💚No. Thank YOU! ")  # f文字列（フォーマット済み文字列リテラル）
-    
-    if message.content == "Thanks":
-        # チャンネルへメッセージを送信
-        await message.channel.send(f"Dear💙 {message.author.mention} 💙No. Thank YOU! ")  # f文字列（フォーマット済み文字列リテラル）
-    
-    if message.content == "thankyou":
-        # チャンネルへメッセージを送信
-        await message.channel.send(f"Dear♥ {message.author.mention}♥No. Thank YOU! ")  # f文字列（フォーマット済み文字列リテラル）
-    
-    if message.content == "thank you":
-        # チャンネルへメッセージを送信
-        await message.channel.send(f"Dear♥ {message.author.mention}♥No. Thank YOU! ")  # f文字列（フォーマット済み文字列リテラル）
-            
-    if message.content == "Thank you!":
-        # チャンネルへメッセージを送信
-        await message.channel.send(f"Dear💗 {message.author.mention} 💗No. Thank YOU! ")  # f文字列（フォーマット済み文字列リテラル）
-    
-    if message.content == "Thanks!":
-        # チャンネルへメッセージを送信
-        await message.channel.send(f"Dear💕 {message.author.mention} 💕No. Thank YOU! ")  # f文字列（フォーマット済み文字列リテラル）
-        
-    if message.content == "ty":
-        # チャンネルへメッセージを送信
-        await message.channel.send(f"😃 Dear {message.author.mention} Thx! ")  # f文字列（フォーマット済み文字列リテラル）
-    
-    if message.content == "thx":
-        # チャンネルへメッセージを送信
-        await message.channel.send(f"😃 Dear {message.author.mention} Thx! ")  # f文字列（フォーマット済み文字列リテラル）
-    
-    if message.content == "ありがとうございます":
-        # チャンネルへメッセージを送信
-        await message.channel.send(f"<:good01:699581068285706301>💚{message.author.mention}さん💚 No. Thank YOU! ")  # f文字列（フォーマット済み文字列リテラル）
-    
-    if message.content == "ありがとうございました":
-        # チャンネルへメッセージを送信
-        await message.channel.send(f"<:good01:699581068285706301>💗{message.author.mention}さん💗 No. Thank YOU! ")  # f文字列（フォーマット済み文字列リテラル）
         
     if message.content == "<:ty:699857337980026930><:hai_kao:699072592987947117>":
         # チャンネルへメッセージを送信
         await message.channel.send(f"<:ty:699857337980026930><:hai_kao:699072592987947117>")  # f文字列（フォーマット済み文字列リテラル）
-  
     
     elif message.content == "r/link":
         # リアクションアイコンを付けたい
