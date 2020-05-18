@@ -127,7 +127,7 @@ async def loop():
         channel = client.get_channel(CHANNEL_ID)
         await channel.send('🥳')
           
-    if now == '21:30':
+    if now == '21:31':
         channel = client.get_channel(CHANNEL_ID)
         await channel.send('<:gm:699792760651120671>🥳')
 
